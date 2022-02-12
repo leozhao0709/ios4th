@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1FAFA8B600AF1EBF8A771EBC /* Pods_TableViewPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF524655A972BD0E9B330D87 /* Pods_TableViewPlay.framework */; };
+		37B21448BE1494A1513B222F /* BlogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2110012E848A51D60E86E /* BlogModel.swift */; };
 		D4154BF427B6516300B01C03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4154BF327B6516300B01C03 /* AppDelegate.swift */; };
 		D4154BF627B6516300B01C03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4154BF527B6516300B01C03 /* SceneDelegate.swift */; };
 		D4154BF827B6516300B01C03 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4154BF727B6516300B01C03 /* ViewController.swift */; };
@@ -15,9 +16,11 @@
 		D4154BFD27B6516500B01C03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4154BFC27B6516500B01C03 /* Assets.xcassets */; };
 		D4154C0027B6516500B01C03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4154BFE27B6516500B01C03 /* LaunchScreen.storyboard */; };
 		D4154C0827B6526E00B01C03 /* PlayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4154C0727B6526E00B01C03 /* PlayTableViewCell.swift */; };
+		D4154C0A27B75A7B00B01C03 /* weibos.plist in Resources */ = {isa = PBXBuildFile; fileRef = D4154C0927B75A7B00B01C03 /* weibos.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37B2110012E848A51D60E86E /* BlogModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogModel.swift; sourceTree = "<group>"; };
 		AA59E00BED46D6B4437F6781 /* Pods-TableViewPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewPlay.debug.xcconfig"; path = "Target Support Files/Pods-TableViewPlay/Pods-TableViewPlay.debug.xcconfig"; sourceTree = "<group>"; };
 		D4154BF027B6516300B01C03 /* TableViewPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4154BF327B6516300B01C03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +31,7 @@
 		D4154BFF27B6516500B01C03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D4154C0127B6516500B01C03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4154C0727B6526E00B01C03 /* PlayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayTableViewCell.swift; sourceTree = "<group>"; };
+		D4154C0927B75A7B00B01C03 /* weibos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = weibos.plist; sourceTree = "<group>"; };
 		D6E29E0F5C730928D9B664E0 /* Pods-TableViewPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableViewPlay.release.xcconfig"; path = "Target Support Files/Pods-TableViewPlay/Pods-TableViewPlay.release.xcconfig"; sourceTree = "<group>"; };
 		DF524655A972BD0E9B330D87 /* Pods_TableViewPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableViewPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -50,7 +54,6 @@
 				AA59E00BED46D6B4437F6781 /* Pods-TableViewPlay.debug.xcconfig */,
 				D6E29E0F5C730928D9B664E0 /* Pods-TableViewPlay.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,8 +84,10 @@
 				D4154C0727B6526E00B01C03 /* PlayTableViewCell.swift */,
 				D4154BF927B6516300B01C03 /* Main.storyboard */,
 				D4154BFC27B6516500B01C03 /* Assets.xcassets */,
+				D4154C0927B75A7B00B01C03 /* weibos.plist */,
 				D4154BFE27B6516500B01C03 /* LaunchScreen.storyboard */,
 				D4154C0127B6516500B01C03 /* Info.plist */,
+				37B2110012E848A51D60E86E /* BlogModel.swift */,
 			);
 			path = TableViewPlay;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 				D4154C0027B6516500B01C03 /* LaunchScreen.storyboard in Resources */,
 				D4154BFD27B6516500B01C03 /* Assets.xcassets in Resources */,
 				D4154BFB27B6516300B01C03 /* Main.storyboard in Resources */,
+				D4154C0A27B75A7B00B01C03 /* weibos.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +220,7 @@
 				D4154BF427B6516300B01C03 /* AppDelegate.swift in Sources */,
 				D4154BF627B6516300B01C03 /* SceneDelegate.swift in Sources */,
 				D4154C0827B6526E00B01C03 /* PlayTableViewCell.swift in Sources */,
+				37B21448BE1494A1513B222F /* BlogModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
