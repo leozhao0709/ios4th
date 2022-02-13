@@ -64,8 +64,8 @@ class PlayTableViewCell: UITableViewCell {
     }
 
     override func updateConstraints() {
-        configAutoLayout()
         print("...updateConstraints...")
+        configAutoLayout()
         super.updateConstraints()
     }
 
