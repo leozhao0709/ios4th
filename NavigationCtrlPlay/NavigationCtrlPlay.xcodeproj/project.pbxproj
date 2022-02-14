@@ -7,25 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37B210D2BACB07FB35EE417E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B214023D760A2D20E5816E /* LaunchScreen.storyboard */; };
-		37B213ADC5A3F40E71C59B3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21DE1B89183CE2C0CB31C /* ViewController.swift */; };
-		37B21D052410EAFFFB0E34DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21E709FBEF5AA15A27F1D /* AppDelegate.swift */; };
-		37B21D81B96DE7BEFDE9304A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21BE91E6F486B220DE534 /* SceneDelegate.swift */; };
-		37B21DE09ADBD6B66BC3644C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B214E97E20E51BB3048A6A /* Assets.xcassets */; };
+		37B21421330FD7F8A8FB6C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B2151E24D8DFDF2EA53C49 /* LaunchScreen.storyboard */; };
+		37B2142E4C39194033E6E0DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B21098D81A3EA1D8DF8A60 /* Assets.xcassets */; };
+		37B21498391BDA718D2F8A16 /* NavigationCtrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2145AB55F74DA33CD02C6 /* NavigationCtrl.swift */; };
+		37B215BC726D73631872B2A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B219194E1FDF5EED622DCB /* SceneDelegate.swift */; };
+		37B2175D76CB453CB4F16CBA /* GreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21C72095AB87C3F8EA22D /* GreenViewController.swift */; };
+		37B21AAEA6902E48C5A3A943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B216FE17549FF7F0F9B0C9 /* AppDelegate.swift */; };
+		37B21D9427316531B05875AB /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21ED903AA669C7B9A7DF6 /* RedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		37B210EDB2675E80A98D95CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		37B214E97E20E51BB3048A6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		37B21BE91E6F486B220DE534 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		37B21CA365999E7E609AA174 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		37B21DE1B89183CE2C0CB31C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		37B21E709FBEF5AA15A27F1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37B21F764CF11C4518F714E3 /* ProgrammingInitialController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgrammingInitialController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B21098D81A3EA1D8DF8A60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37B2132C54FCC600D1C7D4C4 /* NavigationCtrlPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationCtrlPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B2145AB55F74DA33CD02C6 /* NavigationCtrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationCtrl.swift; sourceTree = "<group>"; };
+		37B216FE17549FF7F0F9B0C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		37B2170A8E11DA9BFA156106 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37B218996A9EC974411D3AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		37B219194E1FDF5EED622DCB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		37B21C72095AB87C3F8EA22D /* GreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreenViewController.swift; sourceTree = "<group>"; };
+		37B21ED903AA669C7B9A7DF6 /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		37B2172778E883CB1CB20F99 /* Frameworks */ = {
+		37B212C4E2054F137BBC4578 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,63 +39,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		37B21227D128345DB2FE9414 /* ProgrammingInitialController */ = {
+		37B2106765CE23997DE7294B = {
 			isa = PBXGroup;
 			children = (
-				37B214E97E20E51BB3048A6A /* Assets.xcassets */,
-				37B21E709FBEF5AA15A27F1D /* AppDelegate.swift */,
-				37B214023D760A2D20E5816E /* LaunchScreen.storyboard */,
-				37B210EDB2675E80A98D95CE /* Info.plist */,
-				37B21BE91E6F486B220DE534 /* SceneDelegate.swift */,
-				37B21DE1B89183CE2C0CB31C /* ViewController.swift */,
-			);
-			path = ProgrammingInitialController;
-			sourceTree = "<group>";
-		};
-		37B217EB233D0208950CBC21 = {
-			isa = PBXGroup;
-			children = (
-				37B21AA21C8B5B06C9987894 /* Products */,
-				37B21227D128345DB2FE9414 /* ProgrammingInitialController */,
+				37B2182C6DAAC7736FBF6E35 /* Products */,
+				37B2187A549194FD7BCBFCA3 /* NavigationCtrlPlay */,
 			);
 			sourceTree = "<group>";
 		};
-		37B21AA21C8B5B06C9987894 /* Products */ = {
+		37B2182C6DAAC7736FBF6E35 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37B21F764CF11C4518F714E3 /* ProgrammingInitialController.app */,
+				37B2132C54FCC600D1C7D4C4 /* NavigationCtrlPlay.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		37B2187A549194FD7BCBFCA3 /* NavigationCtrlPlay */ = {
+			isa = PBXGroup;
+			children = (
+				37B21098D81A3EA1D8DF8A60 /* Assets.xcassets */,
+				37B216FE17549FF7F0F9B0C9 /* AppDelegate.swift */,
+				37B2151E24D8DFDF2EA53C49 /* LaunchScreen.storyboard */,
+				37B218996A9EC974411D3AEE /* Info.plist */,
+				37B219194E1FDF5EED622DCB /* SceneDelegate.swift */,
+				37B2145AB55F74DA33CD02C6 /* NavigationCtrl.swift */,
+				37B21ED903AA669C7B9A7DF6 /* RedViewController.swift */,
+				37B21C72095AB87C3F8EA22D /* GreenViewController.swift */,
+			);
+			path = NavigationCtrlPlay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		37B21ECEFCFB9C33E4E46416 /* ProgrammingInitialController */ = {
+		37B21EA9A39E60C321CF436D /* NavigationCtrlPlay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37B21505D350457693BD8A8E /* Build configuration list for PBXNativeTarget "ProgrammingInitialController" */;
+			buildConfigurationList = 37B21BA0F468E507DCF0C31B /* Build configuration list for PBXNativeTarget "NavigationCtrlPlay" */;
 			buildPhases = (
-				37B215877B392F2E3FC81CA2 /* Sources */,
-				37B2172778E883CB1CB20F99 /* Frameworks */,
-				37B215ADA1E72FE8EE17D566 /* Resources */,
+				37B211941AA83C0FB6CBA51C /* Sources */,
+				37B212C4E2054F137BBC4578 /* Frameworks */,
+				37B2180CC378AB75EE894D2D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ProgrammingInitialController;
-			productName = ProgrammingInitialController;
-			productReference = 37B21F764CF11C4518F714E3 /* ProgrammingInitialController.app */;
+			name = NavigationCtrlPlay;
+			productName = NavigationCtrlPlay;
+			productReference = 37B2132C54FCC600D1C7D4C4 /* NavigationCtrlPlay.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		37B210D617C274CFFF315301 /* Project object */ = {
+		37B210322057EF9BEAC505E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 			};
-			buildConfigurationList = 37B21A62A0226A1C030BCA6A /* Build configuration list for PBXProject "ProgrammingInitialController" */;
+			buildConfigurationList = 37B219E6DC75E80D495C99A3 /* Build configuration list for PBXProject "NavigationCtrlPlay" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -100,46 +106,48 @@
 				en,
 				Base,
 			);
-			mainGroup = 37B217EB233D0208950CBC21;
-			productRefGroup = 37B21AA21C8B5B06C9987894 /* Products */;
+			mainGroup = 37B2106765CE23997DE7294B;
+			productRefGroup = 37B2182C6DAAC7736FBF6E35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37B21ECEFCFB9C33E4E46416 /* ProgrammingInitialController */,
+				37B21EA9A39E60C321CF436D /* NavigationCtrlPlay */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		37B215ADA1E72FE8EE17D566 /* Resources */ = {
+		37B2180CC378AB75EE894D2D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B21DE09ADBD6B66BC3644C /* Assets.xcassets in Resources */,
-				37B210D2BACB07FB35EE417E /* LaunchScreen.storyboard in Resources */,
+				37B2142E4C39194033E6E0DB /* Assets.xcassets in Resources */,
+				37B21421330FD7F8A8FB6C23 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		37B215877B392F2E3FC81CA2 /* Sources */ = {
+		37B211941AA83C0FB6CBA51C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B21D052410EAFFFB0E34DD /* AppDelegate.swift in Sources */,
-				37B21D81B96DE7BEFDE9304A /* SceneDelegate.swift in Sources */,
-				37B213ADC5A3F40E71C59B3F /* ViewController.swift in Sources */,
+				37B21AAEA6902E48C5A3A943 /* AppDelegate.swift in Sources */,
+				37B215BC726D73631872B2A1 /* SceneDelegate.swift in Sources */,
+				37B21498391BDA718D2F8A16 /* NavigationCtrl.swift in Sources */,
+				37B21D9427316531B05875AB /* RedViewController.swift in Sources */,
+				37B2175D76CB453CB4F16CBA /* GreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		37B214023D760A2D20E5816E /* LaunchScreen.storyboard */ = {
+		37B2151E24D8DFDF2EA53C49 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				37B21CA365999E7E609AA174 /* Base */,
+				37B2170A8E11DA9BFA156106 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -147,45 +155,21 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		37B215E814525392F612A442 /* Debug */ = {
+		37B2114DABFA0BFBC29F0255 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProgrammingInitialController/Info.plist;
-				INFOPLIST_KEY_NSMainNibFile = Main;
+				INFOPLIST_FILE = NavigationCtrlPlay/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.ProgrammingInitialController;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		37B217D738A41A9E3DF3AD40 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ProgrammingInitialController/Info.plist;
-				INFOPLIST_KEY_NSMainNibFile = Main;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.ProgrammingInitialController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.NavigationCtrlPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -193,7 +177,7 @@
 			};
 			name = Release;
 		};
-		37B218AB7DB795A1F80FA6F8 /* Debug */ = {
+		37B21460DAE38D17B0C6FB5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -254,7 +238,7 @@
 			};
 			name = Debug;
 		};
-		37B21A9A63CD39DBF9906468 /* Release */ = {
+		37B214C7D0E8A8D948EAC08E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -308,28 +292,50 @@
 			};
 			name = Release;
 		};
+		37B21E04BCA84BCAAA8A872D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NavigationCtrlPlay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.NavigationCtrlPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37B21505D350457693BD8A8E /* Build configuration list for PBXNativeTarget "ProgrammingInitialController" */ = {
+		37B219E6DC75E80D495C99A3 /* Build configuration list for PBXProject "NavigationCtrlPlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				37B215E814525392F612A442 /* Debug */,
-				37B217D738A41A9E3DF3AD40 /* Release */,
+				37B21460DAE38D17B0C6FB5F /* Debug */,
+				37B214C7D0E8A8D948EAC08E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37B21A62A0226A1C030BCA6A /* Build configuration list for PBXProject "ProgrammingInitialController" */ = {
+		37B21BA0F468E507DCF0C31B /* Build configuration list for PBXNativeTarget "NavigationCtrlPlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				37B218AB7DB795A1F80FA6F8 /* Debug */,
-				37B21A9A63CD39DBF9906468 /* Release */,
+				37B21E04BCA84BCAAA8A872D /* Debug */,
+				37B2114DABFA0BFBC29F0255 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 37B210D617C274CFFF315301 /* Project object */;
+	rootObject = 37B210322057EF9BEAC505E9 /* Project object */;
 }

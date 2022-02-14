@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "37B213D5E3549F464E9CC16A"
+               BuildableName = "AppStoragePlay.app"
+               BlueprintName = "AppStoragePlay"
+               ReferencedContainer = "container:AppStoragePlay.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "37B213D5E3549F464E9CC16A"
+            BuildableName = "AppStoragePlay.app"
+            BlueprintName = "AppStoragePlay"
+            ReferencedContainer = "container:AppStoragePlay.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>

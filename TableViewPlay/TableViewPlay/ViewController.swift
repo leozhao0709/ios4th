@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
 //    @IBOutlet weak var tableView: UITableView!
 
@@ -33,6 +33,7 @@ class ViewController: UIViewController, UITableViewDataSource {
 
         // Do any additional setup after loading the view.
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.backgroundColor = .link
 
         view.addSubview(tableView)
@@ -57,6 +58,27 @@ class ViewController: UIViewController, UITableViewDataSource {
         cell.blogModel = blogModels[indexPath.row]
         print(cell)
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+
+    }
+
+    // 左滑多个按钮设置 (delegate)
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let action1 = UITableViewRowAction(style: .default, title: "action1") { action, path in
+            print("...action1...", action, path)
+        }
+
+        action1.backgroundColor = .systemOrange
+
+        let action2 = UITableViewRowAction(style: .normal, title: "action2") { action, path in
+            print("...action2...", action, path)
+        }
+
+        action2.backgroundColor = .systemRed
+
+        return [action1, action2]
     }
 }
 
