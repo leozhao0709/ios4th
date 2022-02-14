@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "37B21371F79D1D5E5BA77CED"
+               BuildableName = "TabBarCtrlPlay.app"
+               BlueprintName = "TabBarCtrlPlay"
+               ReferencedContainer = "container:TabBarCtrlPlay.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "37B21371F79D1D5E5BA77CED"
+            BuildableName = "TabBarCtrlPlay.app"
+            BlueprintName = "TabBarCtrlPlay"
+            ReferencedContainer = "container:TabBarCtrlPlay.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
