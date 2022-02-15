@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		37B210B0D711E061BC3F1579 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B213A22CC7E85688E1B891 /* DrawView.swift */; };
 		37B21265121F361A6AD6802C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B214C43B8ED2CD1A026B21 /* Main.storyboard */; };
+		37B21412861E3A26C445B6E9 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21BEEE3ED5DD7929026C7 /* UIImage.swift */; };
 		37B2162DB74ACE1A44DCE5F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21E95BB0B95B3A8308303 /* AppDelegate.swift */; };
 		37B21A3C45BF944974DD7F11 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2148D18503E9B923C71A1 /* SceneDelegate.swift */; };
 		37B21AE566ECA9F54608EF0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B2189A81DC7B8DD178E521 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		37B21840289E21420B784597 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37B2189A81DC7B8DD178E521 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B219B589DB3D5003D72B5D /* quartz2DPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quartz2DPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B21BEEE3ED5DD7929026C7 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		37B21E91200420A08ABEE29E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37B21E95BB0B95B3A8308303 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37B2171170FA130211078426 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37B21BEEE3ED5DD7929026C7 /* UIImage.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		37B21A0D28FFEB97BBABE47F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +76,7 @@
 				37B217FADF7B470887C2BD80 /* ViewController.swift */,
 				37B214C43B8ED2CD1A026B21 /* Main.storyboard */,
 				37B213A22CC7E85688E1B891 /* DrawView.swift */,
+				37B2171170FA130211078426 /* Extensions */,
 			);
 			path = quartz2DPlay;
 			sourceTree = "<group>";
@@ -95,12 +106,16 @@
 /* Begin PBXProject section */
 		37B21FEB808AD415002F9AA1 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+			};
 			buildConfigurationList = 37B216147680B417A408541E /* Build configuration list for PBXProject "quartz2DPlay" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
+				Base,
 			);
 			mainGroup = 37B21B6757110BF19DECEC56;
 			productRefGroup = 37B21A0D28FFEB97BBABE47F /* Products */;
@@ -134,6 +149,7 @@
 				37B21A3C45BF944974DD7F11 /* SceneDelegate.swift in Sources */,
 				37B21E1177A78119A28EEE7D /* ViewController.swift in Sources */,
 				37B210B0D711E061BC3F1579 /* DrawView.swift in Sources */,
+				37B21412861E3A26C445B6E9 /* UIImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +308,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -340,6 +355,7 @@
 				37B2170C6297B37B7BE4950F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

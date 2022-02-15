@@ -6,12 +6,9 @@ import UIKit
 
 class DrawView: UIView {
 
-    private weak var blueView: UIView?
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .systemCyan
-        setupUI()
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -20,26 +17,21 @@ class DrawView: UIView {
 
     override func draw(_ rect: CGRect) {
         super.draw(rect)
+
+        let image = UIImage(named: "me")
+
+//        let ctx = UIGraphicsGetCurrentContext()
+//        ctx?.addArc(center: viewCenter(), radius: bounds.size.width * 0.5, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: true)
+//        ctx?.clip()
+
+        let path = UIBezierPath(arcCenter: viewCenter(), radius: bounds.size.width * 0.5, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: true)
+        path.addClip()
+        image?.draw(in: rect)
     }
 
-    private func setupUI() {
-        let blueView = UIView()
-        blueView.backgroundColor = .systemBlue
-
-        self.blueView = blueView
-
-        addSubview(blueView)
-    }
-
-    private func setupUIFrame() {
+    private func viewCenter() -> CGPoint {
         let viewWidth = bounds.size.width
         let viewHeight = bounds.size.height
-        blueView?.center = CGPoint(x: viewWidth * 0.5, y: viewHeight * 0.5)
-        blueView?.bounds = CGRect(x: 0, y: 0, width: viewWidth * 0.5, height: viewHeight * 0.5)
-    }
-
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        setupUIFrame()
+        return CGPoint(x: viewWidth * 0.5, y: viewHeight * 0.5)
     }
 }

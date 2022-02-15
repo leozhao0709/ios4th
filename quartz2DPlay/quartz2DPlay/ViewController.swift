@@ -11,15 +11,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private weak var imageView: UIImageView? {
+        let imageView = UIImageView()
+        imageView.center = view.center
+        let width: CGFloat = 300
+        let height: CGFloat = 200
+        imageView.bounds.size = CGSize(width: width, height: height)
+
+//        imageView.frame = CGRect(x: 100, y: 200, width: 200, height: 200)
+//        imageView.backgroundColor = .systemTeal
+        imageView.image = UIImage(named: "me")?.circleImage()
+//        imageView.image = UIImage(named: "me")
+        return imageView
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
-        let frame = CGRect(x: 100, y: 200, width: 200, height: 150);
-        let drawView = DrawView()
-        drawView.frame = frame
 
-        view.addSubview(drawView)
+        view.addSubview(imageView!)
     }
 
 
