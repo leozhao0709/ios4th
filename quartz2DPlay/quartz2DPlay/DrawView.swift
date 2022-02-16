@@ -25,7 +25,8 @@ class DrawView: UIView {
 //        ctx?.clip()
 
         let path = UIBezierPath(arcCenter: viewCenter(), radius: bounds.size.width * 0.5, startAngle: 0, endAngle: CGFloat.pi * 2, clockwise: true)
-        path.addClip()
+//        path.addClip()
+        path.removeAllPoints()
         image?.draw(in: rect)
     }
 
