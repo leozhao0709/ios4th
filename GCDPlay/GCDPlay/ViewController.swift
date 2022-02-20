@@ -23,6 +23,20 @@ class ViewController: UIViewController {
 
     private func testOperationQueue() {
         let queue = OperationQueue()
+        queue.maxConcurrentOperationCount = 3
+
+        let op1 = BlockOperation {
+            print("----op1----\(Thread.current)")
+        }
+
+        op1.completionBlock = {
+            print("----op1 complete call---\(Thread.current)")
+        }
+
+        op1.qualityOfService = .background
+
+        queue.addOperation(op1)
+
         queue.addOperation {
             print("---download1-----\(Thread.current)")
         }
