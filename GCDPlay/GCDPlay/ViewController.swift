@@ -53,11 +53,6 @@ class ViewController: UIViewController {
                 print("...update UI....\(Thread.current)")
             }
         }
-
-        let i = 1
-        let j = 3
-        let progress = i * 1.0 / j
-        print(progress)
     }
 
     private func asyncSerial() {
