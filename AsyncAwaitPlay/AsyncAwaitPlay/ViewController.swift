@@ -13,6 +13,11 @@ class ViewController: UIViewController {
 
     let urlSession = URLSession.shared
     private weak var button: UIButton?
+    private var observation: NSKeyValueObservation?
+
+    deinit {
+        observation?.invalidate()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,25 +45,27 @@ class ViewController: UIViewController {
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
-        print(button)
-    }
-
-    private func download1() async {
-        print("---download1---", Thread.current)
-    }
-
-    private func download2() async {
-        print("---download2---", Thread.current)
-    }
-
-    private func download3() async {
-        print("---download3---", Thread.current)
+        Task {
+            try await getTodos()
+            print("------")
+        }
     }
 
     private func getTodos() async throws -> [Todo]? {
         guard let url = URL(string: "https://jsonplaceholder.typicode.com/todos") else {
             throw NSError(domain: "url error", code: 42)
         }
+
+        let task = urlSession.dataTask(with: url) { data, response, error in
+            guard error == nil && (response as? HTTPURLResponse)?.statusCode == 200 else { return }
+            let todos = try? JSONDecoder().decode([Todo].self, from: data!)
+            print(todos)
+        }
+        observation = task.progress.observe(\.fractionCompleted) { (progress: Progress, change: NSKeyValueObservedChange<Double>) in
+            print("---\(progress.fractionCompleted)---")
+        }
+
+        task.resume()
 
         let (data, response) = try await urlSession.data(from: url)
         guard (response as? HTTPURLResponse)?.statusCode == 200 else {
