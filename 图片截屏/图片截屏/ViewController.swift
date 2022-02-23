@@ -12,17 +12,19 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     private var startPanPoint: CGPoint = .zero
 
-    private weak var _coverView: UIView?
-    private weak var coverView: UIView? {
-        if _coverView == nil {
-            let view = UIView()
-            view.backgroundColor = UIColor.black
-            view.alpha = 0.7
-            self.view.addSubview(view)
-            _coverView = view
-        }
-        return _coverView
-    }
+//    private weak var _coverView: UIView?
+//    private weak var coverView: UIView? {
+//        if _coverView == nil {
+//            let view1 = UIView()
+//            view1.backgroundColor = UIColor.black
+//            view1.alpha = 0.7
+//            view.addSubview(view1)
+//            _coverView = view1
+//        }
+//        return _coverView
+//    }
+
+    private weak var coverView: UIView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +35,23 @@ class ViewController: UIViewController {
         imageView.addGestureRecognizer(panGesture)
     }
 
+    private func createCoverView() {
+        if coverView != nil {
+            return
+        }
+
+        let view1 = UIView()
+        view1.backgroundColor = UIColor.black
+        view1.alpha = 0.7
+        view.addSubview(view1)
+        coverView = view1
+    }
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         startPanPoint = touches.first!.location(in: imageView)
         print("...touch...", touches.first?.location(in: imageView))
+        print(coverView)
     }
 
     @objc private func selectArea(panGesture: UIPanGestureRecognizer) {
@@ -52,6 +67,7 @@ class ViewController: UIViewController {
             let width: CGFloat = abs(curPoint.x - startPanPoint.x)
             let height: CGFloat = abs(curPoint.y - startPanPoint.y)
 
+            createCoverView()
             coverView!.frame = CGRect(x: x, y: y, width: width, height: height)
         }
         if panGesture.state == .ended {
