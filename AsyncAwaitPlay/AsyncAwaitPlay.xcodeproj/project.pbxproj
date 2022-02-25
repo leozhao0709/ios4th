@@ -14,6 +14,9 @@
 		37B21A70689CBE83D3CCD2DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21646F80D101230FE077B /* SceneDelegate.swift */; };
 		37B21E6103D189D17D219712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B21884ED6A553ACFB01A07 /* Main.storyboard */; };
 		37B21EFA048EE58D6ED2012C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B213F8C176FBB6D009BB45 /* ViewController.swift */; };
+		D4A779D627C8291800A7DFE1 /* Snipaste_2022-02-24_12-52-27.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A779D527C8291800A7DFE1 /* Snipaste_2022-02-24_12-52-27.png */; };
+		D4A779D827C8292E00A7DFE1 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4A779D727C8292D00A7DFE1 /* test.jpg */; };
+		D4A779DA27C8293F00A7DFE1 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D4A779D927C8293F00A7DFE1 /* 4.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		37B2179CFBB89BFE829D3547 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B2196B7BE30C1AF2B9BE88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37B21D257BA710696821E1A7 /* AsyncAwaitPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncAwaitPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4A779D527C8291800A7DFE1 /* Snipaste_2022-02-24_12-52-27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Snipaste_2022-02-24_12-52-27.png"; sourceTree = "<group>"; };
+		D4A779D727C8292D00A7DFE1 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		D4A779D927C8293F00A7DFE1 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 				37B213F8C176FBB6D009BB45 /* ViewController.swift */,
 				37B21884ED6A553ACFB01A07 /* Main.storyboard */,
 				37B21582514CBE8F0383E4AC /* Todo.swift */,
+				D4A779D527C8291800A7DFE1 /* Snipaste_2022-02-24_12-52-27.png */,
+				D4A779D727C8292D00A7DFE1 /* test.jpg */,
+				D4A779D927C8293F00A7DFE1 /* 4.jpg */,
 			);
 			path = AsyncAwaitPlay;
 			sourceTree = "<group>";
@@ -121,8 +130,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4A779DA27C8293F00A7DFE1 /* 4.jpg in Resources */,
 				37B212853A9900675BB35A43 /* Assets.xcassets in Resources */,
+				D4A779D827C8292E00A7DFE1 /* test.jpg in Resources */,
 				37B21554513160E0C589DD42 /* LaunchScreen.storyboard in Resources */,
+				D4A779D627C8291800A7DFE1 /* Snipaste_2022-02-24_12-52-27.png in Resources */,
 				37B21E6103D189D17D219712 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
