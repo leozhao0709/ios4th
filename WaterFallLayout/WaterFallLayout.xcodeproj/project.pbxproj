@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37B2106DCE51193404C6BE36 /* WaterFallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21ED54BD4122ADD60DA63 /* WaterFallCell.swift */; };
+		37B21237D22336C51DB429CC /* WaterFallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B216B0A280B362EB2DBEE7 /* WaterFallLayout.swift */; };
 		37B213426F87F823F82023DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21F83DE5C9FDB880B9AA2 /* AppDelegate.swift */; };
 		37B2146AB2EA4CB98D1A6767 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21ED8ABAEC6BBADA31367 /* ViewController.swift */; };
 		37B214A0B2AB3B6062995683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B21AE27198408503E68789 /* LaunchScreen.storyboard */; };
@@ -20,8 +22,10 @@
 		37B2117FB0BCE8A6D2ABC438 /* WaterFallLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterFallLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B2151054AABCE5882FA4A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		37B216B00371C5D65F288788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37B216B0A280B362EB2DBEE7 /* WaterFallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFallLayout.swift; sourceTree = "<group>"; };
 		37B217E0DF65D72E68583C47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		37B219ED0FF3671738BF1F9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37B21ED54BD4122ADD60DA63 /* WaterFallCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterFallCell.swift; sourceTree = "<group>"; };
 		37B21ED8ABAEC6BBADA31367 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37B21F83DE5C9FDB880B9AA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +51,8 @@
 				37B2151054AABCE5882FA4A8 /* SceneDelegate.swift */,
 				37B21ED8ABAEC6BBADA31367 /* ViewController.swift */,
 				37B213E17C4E027F37BC8266 /* Main.storyboard */,
+				37B21ED54BD4122ADD60DA63 /* WaterFallCell.swift */,
+				37B216B0A280B362EB2DBEE7 /* WaterFallLayout.swift */,
 			);
 			path = WaterFallLayout;
 			sourceTree = "<group>";
@@ -130,6 +136,8 @@
 				37B213426F87F823F82023DD /* AppDelegate.swift in Sources */,
 				37B21AC72600A39F2331C837 /* SceneDelegate.swift in Sources */,
 				37B2146AB2EA4CB98D1A6767 /* ViewController.swift in Sources */,
+				37B2106DCE51193404C6BE36 /* WaterFallCell.swift in Sources */,
+				37B21237D22336C51DB429CC /* WaterFallLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
