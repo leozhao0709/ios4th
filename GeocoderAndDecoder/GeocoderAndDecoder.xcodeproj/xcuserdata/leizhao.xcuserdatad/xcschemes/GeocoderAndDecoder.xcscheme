@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "37B21491CA48DD7D1DBABDFE"
+               BuildableName = "GeocoderAndDecoder.app"
+               BlueprintName = "GeocoderAndDecoder"
+               ReferencedContainer = "container:GeocoderAndDecoder.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "37B21491CA48DD7D1DBABDFE"
+            BuildableName = "GeocoderAndDecoder.app"
+            BlueprintName = "GeocoderAndDecoder"
+            ReferencedContainer = "container:GeocoderAndDecoder.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
