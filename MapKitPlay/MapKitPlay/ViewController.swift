@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         let longitudeDelta = mapView.region.span.longitudeDelta * 0.5
         let span = MKCoordinateSpan(latitudeDelta: latitudeDelta, longitudeDelta: longitudeDelta)
         let region = MKCoordinateRegion(center: mapView.region.center, span: span)
-        print("------zoomIn---",span)
+        print("------zoomIn---", span)
         mapView.setRegion(region, animated: true)
     }
 
@@ -61,39 +61,62 @@ class ViewController: UIViewController {
         let region = MKCoordinateRegion(center: mapView.region.center, span: span)
         mapView.setRegion(region, animated: true)
     }
+
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+
+        let point = touches.first?.location(in: mapView)
+        guard let point = point else {
+            return
+        }
+        let coordinate = mapView.convert(point, toCoordinateFrom: mapView)
+        let location = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
+
+        let geocoder = CLGeocoder()
+        geocoder.reverseGeocodeLocation(location) { [self] placemarks, error in
+            guard let placemarks = placemarks else {
+                print("parse error---")
+                return
+            }
+
+            if placemarks.count == 0 || error != nil {
+                print("parse error")
+                return
+            }
+
+            let placemark = placemarks.first!
+            let annotation = Annotation(coordinate: coordinate, title: placemark.name, subtitle: placemark.locality)
+            mapView.addAnnotation(annotation)
+        }
+    }
+
 }
 
 extension ViewController: MKMapViewDelegate {
-    public func mapViewDidChangeVisibleRegion(_ mapView: MKMapView) {
-        print("---mapViewDidChangeVisibleRegion---", mapView.region.span)
-    }
 
     public func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
         if initialCoordinateSpan == nil {
             initialCoordinateSpan = mapView.region.span
         }
-        print("-----mapViewDidFinishLoadingMap---", mapView.region.span)
     }
 
-    public func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
-        print("---regionDidChangeAnimated---", mapView.region.span)
-    }
+    public func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation {
+            // this is customer location, we should use system's annotation
+            return nil
+        }
 
-//    public func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-//        if annotation is MKUserLocation {
-//            return nil
-//        }
-//
-//        let identifier = "pinAnnotation"
-//        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView
-//
-//        if annotationView == nil {
-//            annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-//            annotationView?.canShowCallout = true
-//        } else {
-//            annotationView?.annotation = annotation
-//        }
-//
-//        return annotationView
-//    }
+        let identifier = "annotationView"
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView
+
+        if annotationView == nil {
+            annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            annotationView?.canShowCallout = true
+        }
+
+        annotationView?.annotation = annotation
+        annotationView?.animatesWhenAdded = true
+        annotationView?.markerTintColor = UIColor(red: CGFloat.random(in: 0...1), green: CGFloat.random(in: 0...1), blue: CGFloat.random(in: 0...1), alpha: CGFloat.random(in: 0.7...1))
+        return annotationView
+    }
 }
