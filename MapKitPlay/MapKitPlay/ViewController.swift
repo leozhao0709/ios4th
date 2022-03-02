@@ -34,7 +34,7 @@ class ViewController: UIViewController {
 
         mapView.showsTraffic = true
         mapView.showsBuildings = true
-        
+
 
 //        mapView.showsScale = true
 //        mapView.showsCompass = true //default true
