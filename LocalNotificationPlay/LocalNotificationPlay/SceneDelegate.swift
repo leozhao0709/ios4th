@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  LocalNotificationPlay
 //
-//  Created by Lei Zhao on 3/3/22.
+//  Created by Lei Zhao on 3/4/22.
 //
 //
 
@@ -18,9 +18,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else {
+        guard let windowScene = (scene as? UIWindowScene) else {
             return
         }
+
+        window = UIWindow(windowScene: windowScene)
+        let rootCtrl = ViewController()
+        window?.rootViewController = rootCtrl
+        window?.makeKeyAndVisible()
+
+        let center = UNUserNotificationCenter.current()
+        center.delegate = self
     }
 
 
@@ -55,6 +63,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
 }
 
+
+extension SceneDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> ()) {
+        completionHandler()
+
+        if response.notification.request.identifier == OneNotification.requestIdentifier {
+            // check action identifier first as action won't open app
+            if response.actionIdentifier == OneNotification.readActionIdentifier {
+                print("---OneNotification read action---", response.notification)
+                window?.rootViewController = RedViewController()
+                return
+            }
+            window?.rootViewController?.present(RedViewController(), animated: true)
+            // open OneNotification Screen
+            print("---open OneNotification Screen---", response.notification)
+            return
+        }
+    }
+}

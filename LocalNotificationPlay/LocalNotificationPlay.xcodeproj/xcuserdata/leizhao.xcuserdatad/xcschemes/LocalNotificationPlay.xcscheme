@@ -7,7 +7,7 @@
             buildForRunning = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "37B2169D1A08A1CD215308E5"
+               BlueprintIdentifier = "37B21B82D2DA417C1CBFDE8B"
                BuildableName = "LocalNotificationPlay.app"
                BlueprintName = "LocalNotificationPlay"
                ReferencedContainer = "container:LocalNotificationPlay.xcodeproj">
@@ -22,7 +22,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "37B2169D1A08A1CD215308E5"
+            BlueprintIdentifier = "37B21B82D2DA417C1CBFDE8B"
             BuildableName = "LocalNotificationPlay.app"
             BlueprintName = "LocalNotificationPlay"
             ReferencedContainer = "container:LocalNotificationPlay.xcodeproj">

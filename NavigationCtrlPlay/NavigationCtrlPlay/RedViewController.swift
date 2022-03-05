@@ -23,6 +23,12 @@ class RedViewController: UIViewController {
         view.addSubview(button!)
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        let url = URL(string: "LocalNotificationPlay://")!
+        UIApplication.shared.open(url)
+    }
+
     @objc private func onCameraClick() {
         print("...onCameraClick...")
     }

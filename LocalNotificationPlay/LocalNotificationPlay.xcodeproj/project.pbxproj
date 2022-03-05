@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37B211829ED53D3699A88CC9 /* OneNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21880683F7B8B65E81C9A /* OneNotification.swift */; };
-		37B212EEEEFBA8DA80CEF8F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B21DC28ECB28274C28B264 /* Assets.xcassets */; };
-		37B213641EA3568EAD750700 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B211FB19971B20506B1983 /* AppDelegate.swift */; };
-		37B21492B8596045195BC56C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B215D29B595DCCEE40E316 /* Main.storyboard */; };
-		37B21AF4DFA1CBF54D9392EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2137D9B2FDE9B5FD9184F /* ViewController.swift */; };
-		37B21EDCFD1DC57013E0247B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21E7808B3F3650B557837 /* SceneDelegate.swift */; };
+		37B211598D78A6353158B307 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21C577010F412ECDB9B17 /* SceneDelegate.swift */; };
+		37B2126A37A8415B464FFD92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B21B9E2E314273469384A2 /* Assets.xcassets */; };
+		37B21503E6FA72ACDB83F8A7 /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B214D9ED25BBC75092CF58 /* RedViewController.swift */; };
+		37B216E4A572D8C5004A8905 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B214D9D9C66ACAF2962028 /* LaunchScreen.storyboard */; };
+		37B2199612AA7C093F75D50A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21B3CD5C2F28425E695FF /* ViewController.swift */; };
+		37B21B486929956451F01DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B2162EE4FC517837122ADC /* AppDelegate.swift */; };
+		37B21E6B6F25E8060FF53BD5 /* OneNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21C03828F3D7B5C7BA391 /* OneNotification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		37B210920A9002787E56C879 /* LocalNotificationPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotificationPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		37B211FB19971B20506B1983 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37B212B4943CA9DFD4A317D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
-		37B2137D9B2FDE9B5FD9184F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		37B213CC10AD0E7CCBA7EC98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		37B21880683F7B8B65E81C9A /* OneNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneNotification.swift; sourceTree = "<group>"; };
-		37B21DC28ECB28274C28B264 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		37B21E7808B3F3650B557837 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		37B21392431B0C938BC379D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37B214D5EA760A6854F74455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		37B214D9ED25BBC75092CF58 /* RedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
+		37B2162EE4FC517837122ADC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		37B21B3CD5C2F28425E695FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		37B21B9E2E314273469384A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37B21C03828F3D7B5C7BA391 /* OneNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneNotification.swift; sourceTree = "<group>"; };
+		37B21C577010F412ECDB9B17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		37B21EE3517482591A99F0B9 /* LocalNotificationPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalNotificationPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		37B21E2C5280A4A9A988DE50 /* Frameworks */ = {
+		37B217519EECB4BFFE527817 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,46 +39,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		37B21085B51CE3C75CC239E0 = {
+		37B2125E74F1403FC1BBC94F = {
 			isa = PBXGroup;
 			children = (
-				37B2151F3214C38D439E0F1A /* Products */,
-				37B21B0A4431CE3F70F701EB /* LocalNotificationPlay */,
+				37B21E9ECD25CD0F2B2CF769 /* Products */,
+				37B21B72CBA4D62FBA25544D /* LocalNotificationPlay */,
 			);
 			sourceTree = "<group>";
 		};
-		37B2151F3214C38D439E0F1A /* Products */ = {
+		37B21B72CBA4D62FBA25544D /* LocalNotificationPlay */ = {
 			isa = PBXGroup;
 			children = (
-				37B210920A9002787E56C879 /* LocalNotificationPlay.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		37B21B0A4431CE3F70F701EB /* LocalNotificationPlay */ = {
-			isa = PBXGroup;
-			children = (
-				37B21DC28ECB28274C28B264 /* Assets.xcassets */,
-				37B211FB19971B20506B1983 /* AppDelegate.swift */,
-				37B212B4943CA9DFD4A317D5 /* Info.plist */,
-				37B21E7808B3F3650B557837 /* SceneDelegate.swift */,
-				37B2137D9B2FDE9B5FD9184F /* ViewController.swift */,
-				37B215D29B595DCCEE40E316 /* Main.storyboard */,
-				37B21880683F7B8B65E81C9A /* OneNotification.swift */,
+				37B21B9E2E314273469384A2 /* Assets.xcassets */,
+				37B2162EE4FC517837122ADC /* AppDelegate.swift */,
+				37B214D9D9C66ACAF2962028 /* LaunchScreen.storyboard */,
+				37B214D5EA760A6854F74455 /* Info.plist */,
+				37B21C577010F412ECDB9B17 /* SceneDelegate.swift */,
+				37B21B3CD5C2F28425E695FF /* ViewController.swift */,
+				37B21C03828F3D7B5C7BA391 /* OneNotification.swift */,
+				37B214D9ED25BBC75092CF58 /* RedViewController.swift */,
 			);
 			path = LocalNotificationPlay;
+			sourceTree = "<group>";
+		};
+		37B21E9ECD25CD0F2B2CF769 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37B21EE3517482591A99F0B9 /* LocalNotificationPlay.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		37B2169D1A08A1CD215308E5 /* LocalNotificationPlay */ = {
+		37B21B82D2DA417C1CBFDE8B /* LocalNotificationPlay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37B216F53DA810D4D53B2485 /* Build configuration list for PBXNativeTarget "LocalNotificationPlay" */;
+			buildConfigurationList = 37B2130D245D3E9446277957 /* Build configuration list for PBXNativeTarget "LocalNotificationPlay" */;
 			buildPhases = (
-				37B2130ABE383A34811E4BA9 /* Sources */,
-				37B21E2C5280A4A9A988DE50 /* Frameworks */,
-				37B21EEC11AE99F20DFCACD7 /* Resources */,
+				37B219F77BBB0F5C27FA6A08 /* Sources */,
+				37B217519EECB4BFFE527817 /* Frameworks */,
+				37B2126AF82C425E4DF9BFDB /* Resources */,
 			);
 			buildRules = (
 			);
@@ -84,22 +87,22 @@
 			);
 			name = LocalNotificationPlay;
 			productName = LocalNotificationPlay;
-			productReference = 37B210920A9002787E56C879 /* LocalNotificationPlay.app */;
+			productReference = 37B21EE3517482591A99F0B9 /* LocalNotificationPlay.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		37B21D2CBF1956EE4581E3F2 /* Project object */ = {
+		37B21D6C58A9D139BA314BE9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				TargetAttributes = {
-					37B2169D1A08A1CD215308E5 = {
+					37B21B82D2DA417C1CBFDE8B = {
 						DevelopmentTeam = ZQNTYXCS7L;
 					};
 				};
 			};
-			buildConfigurationList = 37B219427111FF2542BB2739 /* Build configuration list for PBXProject "LocalNotificationPlay" */;
+			buildConfigurationList = 37B21C0FB0F9575E2766758A /* Build configuration list for PBXProject "LocalNotificationPlay" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -108,101 +111,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 37B21085B51CE3C75CC239E0;
-			productRefGroup = 37B2151F3214C38D439E0F1A /* Products */;
+			mainGroup = 37B2125E74F1403FC1BBC94F;
+			productRefGroup = 37B21E9ECD25CD0F2B2CF769 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37B2169D1A08A1CD215308E5 /* LocalNotificationPlay */,
+				37B21B82D2DA417C1CBFDE8B /* LocalNotificationPlay */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		37B21EEC11AE99F20DFCACD7 /* Resources */ = {
+		37B2126AF82C425E4DF9BFDB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B212EEEEFBA8DA80CEF8F1 /* Assets.xcassets in Resources */,
-				37B21492B8596045195BC56C /* Main.storyboard in Resources */,
+				37B2126A37A8415B464FFD92 /* Assets.xcassets in Resources */,
+				37B216E4A572D8C5004A8905 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		37B2130ABE383A34811E4BA9 /* Sources */ = {
+		37B219F77BBB0F5C27FA6A08 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B213641EA3568EAD750700 /* AppDelegate.swift in Sources */,
-				37B21EDCFD1DC57013E0247B /* SceneDelegate.swift in Sources */,
-				37B21AF4DFA1CBF54D9392EA /* ViewController.swift in Sources */,
-				37B211829ED53D3699A88CC9 /* OneNotification.swift in Sources */,
+				37B21B486929956451F01DDC /* AppDelegate.swift in Sources */,
+				37B211598D78A6353158B307 /* SceneDelegate.swift in Sources */,
+				37B2199612AA7C093F75D50A /* ViewController.swift in Sources */,
+				37B21E6B6F25E8060FF53BD5 /* OneNotification.swift in Sources */,
+				37B21503E6FA72ACDB83F8A7 /* RedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		37B215D29B595DCCEE40E316 /* Main.storyboard */ = {
+		37B214D9D9C66ACAF2962028 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				37B213CC10AD0E7CCBA7EC98 /* Base */,
+				37B21392431B0C938BC379D9 /* Base */,
 			);
-			name = Main.storyboard;
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		37B21279F830E4D35D0B17D0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZQNTYXCS7L;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LocalNotificationPlay/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.LocalNotificationPlay;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		37B213546A19FEEB00664E58 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZQNTYXCS7L;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LocalNotificationPlay/Info.plist;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.LocalNotificationPlay;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		37B2173761126D14D22A9A1B /* Release */ = {
+		37B214A014057C3E401966F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -256,7 +214,7 @@
 			};
 			name = Release;
 		};
-		37B217AE95EE5FF5D8EF6BD9 /* Debug */ = {
+		37B21691941FE34D89B4DDFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -317,28 +275,74 @@
 			};
 			name = Debug;
 		};
+		37B21B740B5B03E698BE1614 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZQNTYXCS7L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocalNotificationPlay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.LocalNotificationPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		37B21D1DDB67CA3937311936 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZQNTYXCS7L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LocalNotificationPlay/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.LocalNotificationPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37B216F53DA810D4D53B2485 /* Build configuration list for PBXNativeTarget "LocalNotificationPlay" */ = {
+		37B2130D245D3E9446277957 /* Build configuration list for PBXNativeTarget "LocalNotificationPlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				37B21279F830E4D35D0B17D0 /* Debug */,
-				37B213546A19FEEB00664E58 /* Release */,
+				37B21D1DDB67CA3937311936 /* Debug */,
+				37B21B740B5B03E698BE1614 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37B219427111FF2542BB2739 /* Build configuration list for PBXProject "LocalNotificationPlay" */ = {
+		37B21C0FB0F9575E2766758A /* Build configuration list for PBXProject "LocalNotificationPlay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				37B217AE95EE5FF5D8EF6BD9 /* Debug */,
-				37B2173761126D14D22A9A1B /* Release */,
+				37B21691941FE34D89B4DDFB /* Debug */,
+				37B214A014057C3E401966F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 37B21D2CBF1956EE4581E3F2 /* Project object */;
+	rootObject = 37B21D6C58A9D139BA314BE9 /* Project object */;
 }

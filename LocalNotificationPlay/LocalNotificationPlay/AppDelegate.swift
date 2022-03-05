@@ -2,42 +2,35 @@
 //  AppDelegate.swift
 //  LocalNotificationPlay
 //
-//  Created by Lei Zhao on 3/3/22.
+//  Created by Lei Zhao on 3/4/22.
 //
 //
 
 import UIKit
 
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let center = UNUserNotificationCenter.current()
-        center.delegate = self
-        return true
+        true
     }
 
-//    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-//        print("---deviceToken---", deviceToken)
-//    }
-//
-//    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-//        print("---didFailToRegisterForRemoteNotificationsWithError---", error)
-//    }
-}
+
+    // MARK: UISceneSession Lifecycle
 
 
-extension AppDelegate: UNUserNotificationCenterDelegate {
-    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> ()) {
-        completionHandler()
-        if response.notification.request.identifier == OneNotification.requestIdentifier {
-            if response.actionIdentifier == OneNotification.readActionIdentifier {
-                print("---OneNotification read action---", response.notification)
-            }
-            // open OneNotification Screen
-            print("---open OneNotification Screen---", response.notification)
-        }
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        // Called when a new scene session is being created.
+        // Use this method to select a configuration to create the new scene with.
+        UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    }
+
+
+    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+        // Called when the user discards a scene session.
+        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 }
