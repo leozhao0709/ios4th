@@ -11,12 +11,14 @@
 		37B210E9398F6392C705FE2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B217337D8633DAEB40FF39 /* ViewController.swift */; };
 		37B2146E0AAB50B6796967F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21671D3BE819C28E75D06 /* SceneDelegate.swift */; };
 		37B21A7C8E00EF0EDA7CDB92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B214CD54059391FF4BA20C /* Assets.xcassets */; };
+		37B21AFBE7A434DE2D9F9122 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B21293D560E9F5E5106ECB /* Annotation.swift */; };
 		37B21E11C9CD545611FDC07F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B21F82CC0308DEBF531DA5 /* LaunchScreen.storyboard */; };
 		37B21FC208456FAB02CD4D14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B21C18A8A3355A099C1FFD /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		37B210A9E24DCBB050D8FCE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		37B21293D560E9F5E5106ECB /* Annotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 		37B2141DA39E3E17EF7380E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37B214CD54059391FF4BA20C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B21671D3BE819C28E75D06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				37B21671D3BE819C28E75D06 /* SceneDelegate.swift */,
 				37B217337D8633DAEB40FF39 /* ViewController.swift */,
 				37B21C18A8A3355A099C1FFD /* Main.storyboard */,
+				37B21293D560E9F5E5106ECB /* Annotation.swift */,
 			);
 			path = MapKitPlay;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 				37B210913A94F84E2AD72CCB /* AppDelegate.swift in Sources */,
 				37B2146E0AAB50B6796967F6 /* SceneDelegate.swift in Sources */,
 				37B210E9398F6392C705FE2F /* ViewController.swift in Sources */,
+				37B21AFBE7A434DE2D9F9122 /* Annotation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
