@@ -15,12 +15,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = .white
+        let first = OneNotification.shared
+        let two = OneNotification.shared
+        print(first == two)
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         print("---start request notification---")
-
         OneNotification.requestNotification()
     }
 }

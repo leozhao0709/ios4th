@@ -1,7 +1,7 @@
 import UserNotifications
 import UIKit
 
-class OneNotification {
+class OneNotification: NSObject {
 
     static let requestIdentifier = "OneNotification"
     static let readActionIdentifier = "Read"
