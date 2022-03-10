@@ -20,22 +20,36 @@ class ViewController: UIViewController {
             AVFormatIDKey: kAudioFormatMPEG4AAC
         ]
         audioRecorder = try? AVAudioRecorder(url: url, settings: settings)
+
+        // 监控声波(开启声波检测)
+        audioRecorder?.isMeteringEnabled = true
+        let session = AVAudioSession.sharedInstance()
+        try? session.setCategory(.record)
         return audioRecorder
     }()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-//        // Do any additional setup after loading the view.
+    private lazy var displayLink: CADisplayLink = {
+        let displayLink = CADisplayLink(target: self, selector: #selector(updateMeter))
+        displayLink.add(to: .main, forMode: .common)
+        return displayLink
+    }()
 
+    @objc private func updateMeter() {
+        audioRecorder?.updateMeters()
 
+        let power = audioRecorder?.averagePower(forChannel: 0) // power range: -160 ~ 0. 0 means high power.
+        print("---power---\(power)")
     }
+
 
     @IBAction func startRecord(_ sender: Any) {
         audioRecorder?.record()
+        displayLink.isPaused = false
     }
 
     @IBAction func stopRecord(_ sender: Any) {
         audioRecorder?.stop()
+        displayLink.isPaused = true
     }
 
 }
