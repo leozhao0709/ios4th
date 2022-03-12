@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   version = "1.3">
+   <BuildAction>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForRunning = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D41B451027DBD3EB0075F1C3"
+               BuildableName = "&#24405;&#21046;&#35270;&#39057;.app"
+               BlueprintName = "&#24405;&#21046;&#35270;&#39057;"
+               ReferencedContainer = "container:&#24405;&#21046;&#35270;&#39057;.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <LaunchAction
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "D41B451027DBD3EB0075F1C3"
+            BuildableName = "&#24405;&#21046;&#35270;&#39057;.app"
+            BlueprintName = "&#24405;&#21046;&#35270;&#39057;"
+            ReferencedContainer = "container:&#24405;&#21046;&#35270;&#39057;.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </LaunchAction>
+</Scheme>
