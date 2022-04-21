@@ -23,7 +23,6 @@
 		37B21756C76180BC3133F2B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37B217C1F0C3FB6EFEEBBFB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		37B21A86046231A0B49BAA5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		37B21DA603FE59F7B9666B51 /* 视频播放.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "视频播放.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B21EDE4CF20FA34B8E494C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D41B44E427DAF4DD0075F1C3 /* video */ = {isa = PBXFileReference; lastKnownFileType = folder; path = video; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,7 +49,6 @@
 		37B21BF522F8DEA99C352288 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37B21DA603FE59F7B9666B51 /* 视频播放.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,7 +85,6 @@
 			);
 			name = "视频播放";
 			productName = "视频播放";
-			productReference = 37B21DA603FE59F7B9666B51 /* 视频播放.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -293,7 +290,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lzhao.视频播放";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.videoPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -316,7 +313,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lzhao.视频播放";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lzhao.videoPlay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

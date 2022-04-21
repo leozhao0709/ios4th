@@ -18,10 +18,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
-
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        super.touchesBegan(touches, with: event)
 
         let avPlayerCtrl = AVPlayerViewController()
         let url = URL(fileReferenceLiteralResourceName: "./video/xiaohuangren.mp4");
@@ -34,6 +30,7 @@ class ViewController: UIViewController {
 //        avPlayerCtrl.showsPlaybackControls = false
 
         self.avPlayerCtrl = avPlayerCtrl
+        self.addChild(avPlayerCtrl)
 
 //        // modal show video with full screen
 //        present(avPlayerCtrl, animated: true)
@@ -41,5 +38,10 @@ class ViewController: UIViewController {
         // customize view
         avPlayerCtrl.view.frame = CGRect(x: 40, y: 200, width: 300, height: 400)
         view.addSubview(avPlayerCtrl.view)
+        avPlayerCtrl.didMove(toParent: self)
+    }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
     }
 }
