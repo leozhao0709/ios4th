@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SwiftUI
 
 class ViewController: UIViewController {
 
@@ -17,11 +17,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let lang = UserDefaults.standard.value(forKey: "AppleLanguages") as? [String]
-        print(lang?.first)
-
         // Do any additional setup after loading the view.
         clickMeBtn.setTitle(NSLocalizedString("click_me", tableName: "lan_en", comment: ""), for: .normal)
         clickMeBtn.sizeToFit()
+
+        let vc = UIHostingController(rootView: Text(NSLocalizedString("click_me", tableName: "lan_ch", comment: "")))
+        addChild(vc)
+        vc.view.frame = CGRect(x: 100, y: 0, width: 100, height: 100)
+        view.addSubview(vc.view)
+        vc.didMove(toParent: self)
     }
 }
