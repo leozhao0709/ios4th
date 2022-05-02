@@ -5,8 +5,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var viewModel: ViewModel
-    var onBtnClick: () -> Void
+    @ObservedObject var viewModel: ViewModel
+    var onGoToRedViewClick: () -> Void
 
     var body: some View {
         VStack {
@@ -15,7 +15,10 @@ struct ContentView: View {
             Button("change Text") {
                 let newText = "---SwiftUI--\(Int.random(in: 0..<100))"
                 viewModel.updateViewModelText(newText: newText)
-                onBtnClick()
+            }
+
+            Button("Go to Red View") {
+                onGoToRedViewClick()
             }
         }
     }
