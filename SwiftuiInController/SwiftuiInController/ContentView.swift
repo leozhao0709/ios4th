@@ -10,7 +10,7 @@ struct ContentView: View {
 
     var body: some View {
         VStack {
-            Text(viewModel.model.text)
+            Text(viewModel.getMode().text)
                     .background(Color.purple)
             Button("change Text") {
                 let newText = "---SwiftUI--\(Int.random(in: 0..<100))"

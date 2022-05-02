@@ -3,17 +3,26 @@
 //
 
 import Foundation
+import Combine
 
 class ViewModel: ObservableObject {
-    @Published public var model: Model = Model()
+    @Published private var model: Model = Model()
 
     func updateViewModelText(newText: String) {
         model.text = newText
+    }
+
+    func getMode() -> Model {
+        model
+    }
+
+    func modelPublisher() -> Published<Model>.Publisher {
+        self.$model
     }
 }
 
 extension ViewModel {
     struct Model {
-        var text: String = ""
+        var text: String = "23456"
     }
 }

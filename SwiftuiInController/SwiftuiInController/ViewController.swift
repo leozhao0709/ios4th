@@ -8,11 +8,22 @@
 
 import UIKit
 import SwiftUI
+import Combine
 
 class ViewController: UIViewController {
 
-    var viewModel = ViewModel()
+    private var viewModel: ViewModel
     var label: UILabel?
+    private var cancellables = Set<AnyCancellable>()
+
+    init() {
+        viewModel = ViewModel()
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required convenience init?(coder: NSCoder) {
+        self.init()
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,10 +41,16 @@ class ViewController: UIViewController {
         label.center = CGPoint(x: 100, y: 300)
         view.addSubview(label)
         self.label = label
-        updateLabel()
+
+        viewModel.modelPublisher().sink { model in
+                    DispatchQueue.main.async { [weak self] in
+                        self?.updateLabel()
+                    }
+                }
+                .store(in: &cancellables)
+
 
         let vc = UIHostingController(rootView: ContentView(viewModel: self.viewModel) {
-            self.updateLabel()
         })
         addChild(vc)
         vc.view.frame = CGRect(x: 100, y: 20, width: 200, height: 200)
@@ -49,7 +66,7 @@ class ViewController: UIViewController {
     }
 
     private func updateLabel() {
-        label?.text = viewModel.model.text
+        label?.text = viewModel.getMode().text
         label?.sizeToFit()
     }
 }
