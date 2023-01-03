@@ -10,11 +10,9 @@ import SwiftUI
 @main
 struct SwiftUIPlayGroundApp: App {
     
-    @State private var postViewModel = PostsViewModel()
-    
     var body: some Scene {
         WindowGroup {
-            ContentView(postViewModel: postViewModel)
+            CanvasBootcamp()
         }
     }
 }
