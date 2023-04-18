@@ -1,0 +1,8 @@
+/* 
+  infoPlist.strings
+  TodoList
+
+  Created by Lei Zhao on 4/13/23.
+  
+*/
+"CFBundleDisplayName" = "TodoList";
