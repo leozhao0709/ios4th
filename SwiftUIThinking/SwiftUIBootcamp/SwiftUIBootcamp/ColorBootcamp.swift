@@ -8,12 +8,21 @@
 import SwiftUI
 
 struct ColorBootcamp: View {
+    let colors: [Color] = [
+        .red, .orange, .yellow, .green, .mint,
+        .teal, .cyan, .blue, .indigo, .purple,
+        .pink, .brown, .gray, .primary, .secondary, .accentColor, .black, .white, .clear
+    ]
+
     var body: some View {
-        RoundedRectangle(cornerRadius: 25)
-            .fill(Color("CustomColor"))
-            .frame(width: 300, height: 200)
-//            .shadow(radius: 10)
-            .shadow(color: Color("CustomColor"), radius: 10, x: 10, y: 10)
+        List {
+            ForEach(colors, id: \.self) {
+                RoundedRectangle(cornerRadius: 25)
+                    .fill($0)
+                    .frame(width: 300, height: 200)
+            }
+        }
+        
     }
 }
 
